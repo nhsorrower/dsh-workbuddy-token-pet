@@ -1,0 +1,38 @@
+name: Release
+
+# 打一个 v* 标签时自动发布到 npm。
+# 需要在仓库 Settings → Secrets 里配置 NPM_TOKEN。
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: 语法检查
+        run: |
+          node --check index.js
+          node --check client.js
+
+      - name: 校验打包内容
+        run: npm pack --dry-run
+
+      - name: 发布到 npm
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
