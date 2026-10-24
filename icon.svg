@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <title>Token pet</title>
+  <rect width="120" height="120" rx="26" fill="#13161d"/>
+  <circle cx="60" cy="60" r="27" fill="#8ab4f8"/>
+  <circle cx="60" cy="60" r="14" fill="#13161d"/>
+  <circle cx="52" cy="55" r="3.4" fill="#13161d"/>
+  <circle cx="68" cy="55" r="3.4" fill="#13161d"/>
+  <circle cx="30" cy="34" r="6" fill="#8ab4f8"/>
+  <circle cx="90" cy="34" r="6" fill="#8ab4f8"/>
+  <circle cx="30" cy="88" r="6" fill="#8ab4f8"/>
+  <circle cx="90" cy="88" r="6" fill="#8ab4f8"/>
+</svg>

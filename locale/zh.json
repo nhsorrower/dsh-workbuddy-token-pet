@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Token 桌宠",
+    "description": "浮动桌宠，实时显示当前会话的 token 用量、每步积分消耗与 WorkBuddy 剩余积分。"
+  },
+  "pet": {
+    "title": "Token 桌宠",
+    "session": "当前会话",
+    "noSession": "未打开会话",
+    "tokens": "Token",
+    "credits": "本次积分",
+    "balance": "余额",
+    "turn": "轮",
+    "step": "步",
+    "in": "入",
+    "out": "出",
+    "cache": "缓存",
+    "window": "上下文",
+    "collapse": "收起",
+    "expand": "展开",
+    "refresh": "刷新",
+    "loading": "读取中…",
+    "signedOut": "未登录",
+    "noWorkbuddy": "未安装 WorkBuddy Connect 插件",
+    "error": "读取失败"
+  }
+}

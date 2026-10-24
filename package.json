@@ -1,0 +1,55 @@
+{
+  "name": "dsh-workbuddy-token-pet",
+  "version": "0.1.0",
+  "description": "浮动桌宠：实时显示当前会话的 token 占用与每步消耗，并统计 WorkBuddy 消耗的积分与账户剩余额度（积分需另装 dsh-workbuddy-bridge）。A floating pet for DeepSeek Harness showing live context occupancy, per-step token spend, and the WorkBuddy credits each step was billed plus the remaining balance.",
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "token",
+    "context",
+    "pet",
+    "widget"
+  ],
+  "license": "MIT",
+  "author": "nhsorrower",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhsorrower/dsh-workbuddy-token-pet.git"
+  },
+  "homepage": "https://github.com/nhsorrower/dsh-workbuddy-token-pet#readme",
+  "bugs": {
+    "url": "https://github.com/nhsorrower/dsh-workbuddy-token-pet/issues"
+  },
+  "type": "module",
+  "icon": "./icon.png",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.png"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.png",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "dsh": ">=0.2.0-rc.2"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

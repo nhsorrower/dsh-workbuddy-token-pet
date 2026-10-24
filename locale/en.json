@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Token Pet",
+    "description": "A floating pet showing this session's token usage, credit spend per step, and the remaining WorkBuddy credit."
+  },
+  "pet": {
+    "title": "Token Pet",
+    "session": "This session",
+    "noSession": "No session open",
+    "tokens": "Tokens",
+    "credits": "Credits",
+    "balance": "Balance",
+    "turn": "turn",
+    "step": "step",
+    "in": "in",
+    "out": "out",
+    "cache": "cache",
+    "window": "context",
+    "collapse": "Collapse",
+    "expand": "Expand",
+    "refresh": "Refresh",
+    "loading": "Loading…",
+    "signedOut": "Signed out",
+    "noWorkbuddy": "WorkBuddy Connect is not installed",
+    "error": "Read failed"
+  }
+}
