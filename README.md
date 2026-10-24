@@ -40,17 +40,32 @@ DSH 自带的上下文环表只告诉你"还剩多少"。桌宠显示的是**压
 
 ## 安装
 
-### 从 GitHub 安装
+### 方式一：从 GitHub 安装（需要本机装有 Git）
 
 ```bash
 dsh plugin --profile <your-profile> add github:nhsorrower/dsh-workbuddy-token-pet#v0.1.0
 ```
 
-### 从 npm 安装
+> `github:` 这种写法要先由 pnpm 用 `git ls-remote` 解析版本，**本机没装 Git 会直接失败**：
+> `[ERR_PNPM_GIT_RESOLVE_FAILED] git ls-remote failed: 'git' 不是内部或外部命令`。
+> 遇到这个报错就改用方式二。
+
+### 方式二：下载 tgz 安装（不需要 Git）
+
+在 [Releases](https://github.com/nhsorrower/dsh-workbuddy-token-pet/releases/latest) 页面底部 **Assets** 里下载
+`dsh-workbuddy-token-pet-0.1.0.tgz`，然后：
+
+```bash
+dsh plugin --profile <your-profile> add <下载目录>/dsh-workbuddy-token-pet-0.1.0.tgz
+```
+
+### 方式三：从 npm 安装
 
 ```bash
 dsh plugin --profile <your-profile> add dsh-workbuddy-token-pet
 ```
+
+> 截至 v0.1.0 尚未发布到 npm，这条暂时不可用。
 
 ### 桌面版
 
