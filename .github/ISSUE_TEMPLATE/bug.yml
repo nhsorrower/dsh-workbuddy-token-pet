@@ -1,0 +1,77 @@
+{
+  "name": "Bug 报告",
+  "description": "报告一个问题",
+  "title": "[Bug] ",
+  "labels": ["bug"],
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "感谢反馈！请尽量填完整，信息不足的问题很难定位。\n\n> ⚠️ 提交前请**删掉**日志里的密钥、账号信息和会话内容。"
+      }
+    },
+    {
+      "type": "input",
+      "id": "dsh-version",
+      "attributes": {
+        "label": "DeepSeek Harness 版本",
+        "description": "命令行跑 dsh --version，或桌面版「设置 → 关于」",
+        "placeholder": "例如 0.2.1-rc.3"
+      },
+      "validations": { "required": true }
+    },
+    {
+      "type": "input",
+      "id": "os",
+      "attributes": {
+        "label": "操作系统",
+        "placeholder": "例如 Windows 11 23H2"
+      },
+      "validations": { "required": true }
+    },
+    {
+      "type": "dropdown",
+      "id": "bridge",
+      "attributes": {
+        "label": "是否安装了 dsh-workbuddy-bridge",
+        "options": ["已安装", "未安装", "不确定"]
+      },
+      "validations": { "required": true }
+    },
+    {
+      "type": "textarea",
+      "id": "steps",
+      "attributes": {
+        "label": "复现步骤",
+        "description": "从干净状态开始，一步一步写",
+        "placeholder": "1. 安装插件\n2. 重启宿主\n3. 打开任意会话\n4. ……"
+      },
+      "validations": { "required": true }
+    },
+    {
+      "type": "textarea",
+      "id": "expected",
+      "attributes": {
+        "label": "预期行为"
+      },
+      "validations": { "required": true }
+    },
+    {
+      "type": "textarea",
+      "id": "actual",
+      "attributes": {
+        "label": "实际行为",
+        "description": "有报错请贴完整错误文本"
+      },
+      "validations": { "required": true }
+    },
+    {
+      "type": "textarea",
+      "id": "logs",
+      "attributes": {
+        "label": "相关日志（已脱敏）",
+        "render": "shell"
+      }
+    }
+  ]
+}
